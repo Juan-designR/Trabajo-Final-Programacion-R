@@ -42,7 +42,7 @@ gg <- ggplot(vls)  +
                        na.value = 'white', limits = c(0, 500), breaks = seq(0, 500, 100)) +
   geom_polygon(data = mps, aes(x=long, y = lat, group = group), color = 'black', fill='NA') +
   theme_bw() +
-  scale_x_continuous(breaks = c(-78, -77, -76, -75)) +
+  scale_x_continuous(breaks = c(-78, -69)) +
   coord_equal(xlim = extent(lor)[1:2], ylim = extent(lor)[3:4]) +
   labs(title = 'PRECIPITACI?N MENSUAL - DEPARTAMENTO DE LORETO', fill = 'mm',  x = 'Longitud', y = 'Latitud') +
   theme(legend.position = 'bottom',
